@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"/>
+<title>Hanging CSS</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="apple-mobile-web-app-title" content="Hanging CSS"/>
+
+<style type="text/css">
+html, body{
+  text-align: center;
+  background-color: #fafafa;
+  font-size: 20px;
+  color: #333;
+}
+.mycard{
+  margin: 55px 0;
+}
+.mycard::before{
+  content: url(./chain.png);
+  margin: 0px;
+  position: absolute;
+  top: -52px;
+  left: 10px;
+}
+.mycard::after{
+  content: url(./chain.png);
+  margin: 0px;
+  position: absolute;
+  top: -52px;
+  right: 10px;
+}
+</style>
+</head>
+<body>
+
+<div class="container" style="padding:80px 0;">
+  <div class="card text-white bg-primary border-danger">
+    <div class="card-body">
+      <h4 class="card-title">Title #0</h4>
+      <p class="card-text">Text for #0</p>
+    </div>
+  </div>
+
+  <div class="card text-white bg-primary border-danger mycard">
+    <div class="card-body">
+      <h4 class="card-title">Title #1</h4>
+      <p class="card-text">Text for #1</p>
+    </div>
+  </div>
+
+  <div class="card text-white bg-primary border-danger mycard">
+    <div class="card-body">
+      <h4 class="card-title">Title #2</h4>
+      <p class="card-text">Text for #2</p>
+    </div>
+  </div>
+
+  <div class="card text-white bg-primary border-danger mycard">
+    <div class="card-body">
+      <h4 class="card-title">Title #3</h4>
+      <p class="card-text">Text for #3</p>
+    </div>
+  </div>
+
+  <div class="card text-white bg-primary border-danger mycard">
+    <div class="card-body">
+      <h4 class="card-title">Title #4</h4>
+      <p class="card-text">Text for #4</p>
+    </div>
+  </div>
+
+  <div class="card text-white bg-primary border-danger mycard">
+    <div class="card-body">
+      <h4 class="card-title">Title #5</h4>
+      <p class="card-text">Text for #5</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
